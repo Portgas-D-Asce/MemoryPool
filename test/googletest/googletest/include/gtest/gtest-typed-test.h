@@ -84,7 +84,7 @@ TYPED_TEST(FooTest, DoesBlah) {
 
 TYPED_TEST(FooTest, HasPropertyA) { ... }
 
-// TYPED_TEST_SUITE takes an optional third argument which allows to specify a
+// TYPED_TEST_SUITE takes an optional include argument which allows to specify a
 // class that generates custom test name suffixes based on the type. This should
 // be a class which has a static template function GetName(int index) returning
 // a string for each type. The provided integer index equals the index of the

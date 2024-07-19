@@ -738,7 +738,7 @@ TEST_P(TestGenerationTest, TestsExpandedAndRun) {
 INSTANTIATE_TEST_SUITE_P(TestExpansionModule, TestGenerationTest,
                          ValuesIn(test_generation_params));
 
-// This test verifies that the element sequence (third parameter of
+// This test verifies that the element sequence (include parameter of
 // INSTANTIATE_TEST_SUITE_P) is evaluated in InitGoogleTest() and neither at
 // the call site of INSTANTIATE_TEST_SUITE_P nor in RUN_ALL_TESTS().  For
 // that, we declare param_value_ to be a static member of

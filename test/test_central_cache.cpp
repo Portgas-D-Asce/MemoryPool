@@ -1,5 +1,4 @@
 #include "gtest/gtest.h"
-#include "system_alloc.h"
 
 int hello() {
     return 0;

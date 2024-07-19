@@ -47,7 +47,7 @@ void test_central_cache() {
 void test_thread_cache() {
     auto tc = ThreadCache::tc;
     std::cout << tc.get() << std::endl;
-    const int m = 30000;
+    const int m = 3000;
     void* objects[m];
     for(int i = 1; i < m; ++i) {
         objects[i] = tc->alloc(i % 84 + 1);
@@ -60,8 +60,7 @@ void test_thread_cache() {
 int main() {
     spdlog::set_default_logger(spdlog::stdout_color_mt("memory pool"));
     spdlog::set_level(spdlog::level::info);
-    spdlog::set_pattern("[%Y-%m-%d %H:%M:%S][thread %t][%-5l] %v");
-
+    spdlog::set_pattern("[%Y-%m-%d %H:%M:%S][thread %t][%^%-5l%$] %v");
 
     // test_system();
     // test_page_heap();

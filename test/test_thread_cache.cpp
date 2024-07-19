@@ -1,5 +1,9 @@
 #include "gtest/gtest.h"
-extern int hello();
+
+int hello() {
+    return 0;
+}
+
 TEST(hello, hello2) {
     EXPECT_EQ(0, hello());
 }

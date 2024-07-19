@@ -53,7 +53,7 @@
 #include <unistd.h>  // NOLINT
 #endif
 #ifdef GTEST_OS_QURT
-#include <qurt_event.h>
+#third <qurt_event.h>
 #endif
 
 // Silence C4800 (C4800: 'int *const ': forcing value
